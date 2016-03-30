@@ -58,13 +58,13 @@ int main(int argc, char *argv[])
             globalError += (localError*localError);
         }
 
-  /* Root Mean Squared Error */
-  printf("Iteration %d : RMSE = %.4f\n", iteration,
-                     sqrt(globalError/patternCount));
+        /* Root Mean Squared Error */
+        printf("Iteration %d : RMSE = %.4f\n", iteration,
+               sqrt(globalError/patternCount));
     } while (globalError != 0 && iteration<=MAX_ITERATION);
 
- printf("\nDecision boundary (line) equation: %.2f*x + %.2f*y + %.2f = 0\n",
-             weights[0], weights[1], weights[2]);
+    printf("\nDecision boundary (line) equation: %.2f*x + %.2f*y + %.2f = 0\n",
+           weights[0], weights[1], weights[2]);
 
     return 0;
 }
