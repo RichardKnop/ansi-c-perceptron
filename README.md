@@ -1,5 +1,7 @@
+[![Donate Bitcoin](https://img.shields.io/badge/donate-bitcoin-orange.svg)](https://richardknop.github.io/donate/)
+
 ansi-c-perceptron
-=================
+-----------------
 
 ANSI C implementation of Perceptron (simplest neural network)
 
